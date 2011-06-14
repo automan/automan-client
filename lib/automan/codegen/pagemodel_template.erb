@@ -1,0 +1,29 @@
+<%= namespace_start %> 
+      include AWatir
+	  <% @container.root_models.each do|model| %>
+		  
+		  <%= model.comment %>
+		  class <%= model.class_name %> < <%= base_root_model %>
+			<% model.methods.each do |method| %>
+			 <%= method.comment %>
+			 def <%= method.name  %>
+		      return  <%= method.find_method_name%>(<%= method.the_type %>,"<%= method.selector %>", :name=>"<%= method.name %>", :description=>"<%= method.description %>")
+			 end
+			<% end %>
+
+          include AWatir
+           <% @container.sub_models.each do|model| %>
+
+          <%= model.comment %>
+          class <%= model.class_name %> < <%= base_model %>
+            <% model.methods.each do |method| %>
+             <%= method.comment %>
+             def <%= method.name  %>
+                return  <%= method.find_method_name%>(<%= method.the_type %>,"<%= method.selector %>", :name=>"<%= method.name %>", :description=>"<%= method.description %>")
+             end
+            <% end %>
+          end
+                  <% end %>
+		  end
+	 <% end %> 
+<%= namespace_end %>

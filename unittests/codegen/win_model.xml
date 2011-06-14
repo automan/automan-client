@@ -1,0 +1,10 @@
+        <models modelNamespace="WangWangClient::WWLoginWindow" IsWeb="false" controltypeNamespace="AWatir" base="WinModel">
+          <model Root="true" url="" type="WWLoginWin" description="旺旺登录窗口">
+            <element name="remember_password" cache="false" type="AWatir::WinElement" description="记住密码" selector=".StandardButton:eq(4)" collection="false"/>
+            <element name="auto_login" cache="false" type="AWatir::WinElement" description="自动登录" selector=".StandardButton:eq(5)" collection="false"/>
+            <element name="login" cache="false" type="AWatir::WinElement" description="登录按钮" selector="*:contains(登 录)" collection="false"/>
+            <element name="account_type" cache="false" type="AWatir::WinElement" description="帐号类型" selector=".StandardButton:eq(1)" collection="false"/>
+            <element name="txt_ww_username" cache="false" type="AWatir::WinTextField" description="会员名" selector=".EditComponent:eq(1)" collection="false"/>
+            <element name="txt_password" cache="false" type="AWatir::WinWWPassword" description="密码" selector=".ATL\\:Edit" collection="false"/>
+          </model>
+        </models>

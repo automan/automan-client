@@ -1,0 +1,21 @@
+Version 1.0.4 -- in progress
+  * Merged two Rakefiles into one concise one.
+  * Added "hoelike" - extensions to hoe tasks.
+
+Version 1.0.3
+  * Added with_stdin and capturing_stdout
+  * Added set_test_paths and set_script_lib_path
+  * pi can take symbols as captions.
+  * Added without_pretty_indentation and has_exact_prefix?
+    The names were chosen to be so bad there'd be little 
+    chance of name clashes. 
+
+Version 1.0.2
+  * Added user_denies as an alias for user_disputes.
+
+Version 1.0.1
+  * Added user_is_bewildered to claims.rb
+
+Version 1.0.0
+  * Made into a gem.
+  * Minor improvements to some methods.

@@ -1,0 +1,47 @@
+Version 1.1.6
+  * Allow a :string type conversion (user request). It does nothing.
+
+Version 1.1.5
+  * Improved example files so that they don't include old S4TUtils load-path
+    setting. Not needed by the people who'll use them. 
+  * Example slowtests didn't set the libpath, so they used the gem version.
+  * Better release process Rakefile.
+
+Version 1.1.4
+  * Enable better command_line documentation: ChoicesBuilder#add_help_line,
+ 	ChoicesBuilder#section, ChoicesBuilder#section_specific_to_script.
+  * One Rakefile instead of two.
+  * Give up on using extensions/string: too many name conflicts, too hard to 
+    avoid. Facets didn't solve the problem.
+
+Version 1.1.3
+  * Bugfix: PosixCommandLineSource was not uniformly treated as a 	
+    CommandLineSource.
+  * activesupport includes xmlsimple in its vendor directory, which can 
+    lead to "constant already defined" warnings. Don't require xmlsimple
+    if it's already been required under a different name. We bow before you,
+    ActiveSupport!
+
+Version 1.1.2
+  * Another stupid typo.
+
+Version 1.1.1
+  * Minor error in dependency list.
+
+Version 1.1.0
+  * Handles YAML files as well as XML.
+  * Minor, incompatible changes to the API.
+  * Command-line arglist handling now works with other sources the
+    way options do. In particular, an empty arglist can, for example, 
+    have its value given by defaults rather than locking the value
+    of the choice down to the empty array.
+  * Command-line arglists used to have their length specified independently
+    of all other sources. Now there's a :length "type" that applies to all
+    sources, including the command line. From the user's point of view,     
+    though, wrong-sized arglists look like they're caught by OptionParser.
+  * These relatively minor changes required a bigger overhaul to the 
+    internals. They're less stupid, but I suspect they're still stupid.
+  * A tutorial.
+ 
+Version 1.0.0
+  * Version from _Everyday Scripting with Ruby_

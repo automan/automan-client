@@ -1,0 +1,242 @@
+#header {
+width:750px;
+height:150px;
+color:#fff;
+font-size:50px;
+letter-spacing:-2px;
+margin:0;
+}
+
+.highlight {
+color:#F1Ca3f;
+}
+
+#headerLeft {
+background-color:#eaeaea;
+height:150px;
+width:150px;
+float:left;
+background:url("von-foerster.jpg") no-repeat !important;
+}
+
+#headerRight {
+background-color:#78300A;
+color:#fff;
+height:150px;
+margin-left:155px;
+background:url("tvline.gif") repeat !important;
+}
+
+#headerRight h1 {
+padding-top:25px;
+padding-left:10px;
+font-size:1.2em;
+letter-spacing:-4px;
+line-height:.6em;
+margin:0;
+}
+
+#headerRight h2 {
+padding-top:15px;
+padding-left:10px;
+font-size:0.4em;
+letter-spacing:-1px;
+line-height:1.2em;
+margin:0;
+}
+
+body {
+font-family:verdana;
+font-size:12px;
+margin:0;
+padding:0;
+}
+
+#pageBody {
+background-color:orange;
+font-family:verdana;
+margin:0;
+padding:20px;
+}
+
+#inlineTOC {
+	float: right;
+	list-style: none;
+	background: #EBC851;
+	margin-left: 1em;
+	margin-bottom: 5pt;
+/*	include-source: url(inlinetoc.html);  */
+}
+
+#inlineTOC ul {
+	list-style-type: none;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+#inlineTOC a {
+	font-weight:700;
+	color:#765;
+	text-decoration:none;
+}
+
+#inlineTOC A:hover {
+	color:#333;
+}
+
+
+
+#container {
+width:750px;
+height:auto;
+background-color:#FFF;
+margin:0 auto auto;
+padding:0;
+}
+
+#nav {
+width:80%;
+font-family:Verdana, sans-serif;
+margin:2em;
+padding:5px;
+}
+
+#nav ul,#nav li {
+display:inline;
+color:#339;
+font-weight:700;
+margin:0;
+padding:0;
+}
+
+#nav li a {
+height:25px;
+width:25px;
+background-color:red;
+border:1px solid #000;
+}
+
+#logo {
+background-color:#FFF;
+text-align:left;
+width:750px;
+height:auto;
+padding-bottom:10px;
+padding-left:5px;
+font-size:30px;
+}
+
+#content {
+margin-top:50px;
+font-size:14px;
+text-decoration:none;
+width:750px;
+height:auto;
+border-bottom:1px solid #eaeaea;
+line-height:160%;
+}
+
+#content h2 {
+color:#000;
+font-size:15px;
+padding-left:2px;
+}
+
+
+blockquote {
+background-color:#f2f2f2;
+width:auto;
+margin-left:25px;
+margin-right:25px;
+display:block;
+padding:0.5em 0.5em 0.5em 1em;
+}
+
+#footer {
+color:gray;
+font-size:10px;
+text-decoration:none;
+padding-top:5px;
+}
+
+img.right {
+float:right;
+margin-left:5px;
+padding:5px;
+}
+
+img.left {
+float:left;
+margin-right:5px;
+padding:5px;
+}
+
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+.normal {
+color:gray;
+text-decoration:none;
+}
+
+#outer-container {
+background-color:#fff;
+width:790px;
+border:1px solid #888;
+margin:auto;
+padding:15px 0;
+}
+
+#centerNav {
+padding-left:203px;
+}
+
+#headerNav {
+margin-top:5px;
+font-size:93%;
+background-color: #F1Ca3f;
+float:left;
+width:100%;
+line-height:normal;
+padding-bottom:-1px;
+}
+
+#headerNav UL {
+list-style-type:none;
+margin:0;
+padding:10px 10px 0;
+}
+
+#headerNav LI {
+background:url(left.gif) no-repeat left top;
+float:left;
+margin:0;
+padding:0 0 0 9px;
+}
+
+#headerNav A {
+display:block;
+font-weight:700;
+background:url(right.gif) no-repeat right top;
+color:#765;
+text-decoration:none;
+float:none;
+padding:5px 15px 4px 6px;
+}
+
+#headerNav A:hover {
+color:#333;
+}
+
+#headerNav #current {
+background-image:url(left_on.gif);
+}
+
+#headerNav #current A {
+background-image:url(right_on.gif);
+padding-bottom:5px;
+color:#333;
+}

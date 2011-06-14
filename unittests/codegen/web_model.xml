@@ -1,0 +1,28 @@
+        <models modelNamespace="Taojianghu::Portal::Home" IsWeb="true" controltypeNamespace="AWatir" base="HtmlModel">
+          <model Root="true" url="" type="HomePage" description="主页">
+            <subModel name="comment" cache="false" type="Comment" description="留言区域" selector="#J_commentBox" collection="false"/>
+            <subModel name="follow_act" cache="false" type="FollowAct" description="关注等操作" selector="div.follow-act" collection="false"/>
+          </model>
+          <model Root="false" type="Comment" description="留言区域">
+            <subModel name="comment_box" cache="false" type="CommentBox" description="留言框" selector=".reply-form" collection="false"/>
+            <subModel name="comment_lists" cache="false" type="CommentList" description="留言列表" selector=".reply-list" collection="true"/>
+            <subModel name="popup" cache="false" type="Popup" description="提示弹出框" selector="div.sns-panel-content>div.bd" collection="false"/>
+          </model>
+          <model Root="false" type="CommentBox" description="留言框">
+            <element name="txt_input" cache="false" type="AWatir::ATextField" description="输入框" selector=".J_Suggest" collection="false"/>
+            <element name="lnk_face" cache="false" type="AWatir::ALink" description="表情" selector="#J_viewMoreSmile" collection="false"/>
+            <element name="btn_submit" cache="false" type="AWatir::AButton" description="写好了" selector="a.post" collection="false"/>
+          </model>
+          <model Root="false" type="CommentList" description="留言列表">
+            <element name="lnk_reply" cache="false" type="AWatir::ALink" description="回复链接" selector=".sns-icon\\ icon-comment" collection="false"/>
+            <element name="lnk_delete" cache="false" type="AWatir::ALink" description="删除链接" selector=".sns-icon\\ icon-del" collection="false"/>
+          </model>
+          <model Root="false" type="Popup" description="提示弹出框">
+          </model>
+          <model Root="false" type="FollowAct" description="关注等操作">
+            <element name="lnk_follow" cache="false" type="AWatir::ALink" description="关注按钮" selector="a.add-link" collection="false"/>
+            <element name="lnk_poke" cache="false" type="AWatir::ALink" description="动一下" selector="#J_touch" collection="false"/>
+            <element name="lnk_recfriend" cache="false" type="AWatir::ALink" description="推荐给好友" selector="#J_recommend" collection="false"/>
+            <element name="lnk_gift" cache="false" type="AWatir::ALink" description="送礼物" selector="a.sns-icon\\ icon-gift-send" collection="false"/>
+          </model>
+        </models>

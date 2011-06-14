@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+
+$LOAD_PATH.unshift(File.dirname(__FILE__) + '/../lib/automan')
+require 'commands/command'
+args = ARGV.dup
+ARGV.clear
+command = args.shift.strip rescue 'help'
+
+Automan::Command.run(command, args)
