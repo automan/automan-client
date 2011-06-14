@@ -10,6 +10,6 @@ module Automan
     return result
 	end
   def self.version_detail
-    return "0.8.3.0"
+    return "0.8.3.1"
   end
 end
