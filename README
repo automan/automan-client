@@ -46,7 +46,7 @@ In order to use AutoMan client, you will need to do the following:
 The source code is provided as-is and is based on BSD Open Source.
 
 Sample:
-    ie = IEModel.start("http://s.taobao.com")
+    ie = IEModel.start('http://s.taobao.com')
     page = ie.cast(Taobao::Searchtaobao)                                 
     page.txt_search.set "test search"
     page.btn_search.click
