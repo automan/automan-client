@@ -40,7 +40,8 @@ server side.
 
 
 In order to use AutoMan client, you will need to do the following:
-1) gem install automan-0.8.gem
+0) run 'gem build Rakefile' under root folder
+1) 'gem install automan-0.8.gem'
 2) run the example code under: \example
 
 The source code is provided as-is and is based on BSD Open Source.
