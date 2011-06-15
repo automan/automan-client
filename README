@@ -51,3 +51,6 @@ Sample:
     page = ie.cast(Taobao::Searchtaobao)                                 
     page.txt_search.set "test search"
     page.btn_search.click
+
+Download following doc to read more:
+http://qa.taobao.com/wp-content/uploads/2011/06/AutomanUserMenuZH-CN.pdf
