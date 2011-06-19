@@ -1,6 +1,8 @@
+## COPYING ##
 AutoMan v0.8.3.1
 Copyright  (C) 2010-2011 Alibaba Group Holding Limited
-License
+
+## License ##
   ---------------------------------------------------------------------------
   Copyright (c) 2004 - 2005, Paul Rogers and Bret Pettichord
   Copyright (c) 2006 - 2008, Bret Pettichord
@@ -34,23 +36,25 @@ License
   --------------------------------------------------------------------------
   (based on BSD Open Source License)
 
+## About ##
 AutoMan is a test automation solution developed by TaoBao UI Automation Team.
 AutoMan includes test framework in client side and PageModel web service in
 server side.
 
-
+## Install ##
 In order to use AutoMan client, you will need to do the following:
-0) run 'gem build Rakefile' under root folder
-1) 'gem install automan-0.8.gem'
-2) run the example code under: \example
+1. run 'gem build Rakefile' under root folder
+2. 'gem install automan-0.8.gem'
+3. run the example code under: \example
 
 The source code is provided as-is and is based on BSD Open Source.
 
-Sample:
-    ie = IEModel.start('http://s.taobao.com')
-    page = ie.cast(Taobao::Searchtaobao)                                 
-    page.txt_search.set "test search"
-    page.btn_search.click
+## Sample ##
+	ie = IEModel.start('http://s.taobao.com')
+	page = ie.cast(Taobao::Searchtaobao)                                 
+	page.txt_search.set "test search"
+	page.btn_search.click
 
+## More ##
 Download following doc to read more:
 http://qa.taobao.com/wp-content/uploads/2011/06/AutomanUserMenuZH-CN.pdf
